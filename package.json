@@ -1,0 +1,25 @@
+{
+  "name": "personal-assignment-1",
+  "version": "1.0.0",
+  "description": "Personal assignment for week 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/half-winter-moon/CSE-personal-assignment-1.git"
+  },
+  "keywords": [
+    "cse-341"
+  ],
+  "author": "Jennie Handy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/half-winter-moon/CSE-personal-assignment-1/issues"
+  },
+  "homepage": "https://github.com/half-winter-moon/CSE-personal-assignment-1#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
