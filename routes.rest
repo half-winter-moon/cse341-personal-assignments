@@ -1,3 +1,4 @@
+//LOCALHOST
 // get all contacts
 GET http://localhost:3000
 
@@ -6,7 +7,6 @@ GET http://localhost:3000/contacts/626ab75a6d3ffdff8b4cb4a6
 
 ### create contact
 POST http://localhost:3000/contacts 
-//HTTP/1.1 
 content-type:application/json
 
 {
@@ -24,3 +24,31 @@ content-type:application/json
 
 ### delete contact
 DELETE http://localhost:3000/contacts/62729f54607b3826fadefe68
+
+
+
+//PRODUCTION
+### // get all contacts
+GET https://personal-assignment-1.herokuapp.com/contacts
+
+### // get contact by id
+GET https://personal-assignment-1.herokuapp.com/contacts/626ab75a6d3ffdff8b4cb4a6
+
+### create contact
+POST https://personal-assignment-1.herokuapp.com/contacts 
+content-type:application/json
+
+{
+"firstName": "Charlie", "lastName": "Brown", "email":"cBrown@email.com", "favoriteColor":"Brown", "birthday":"08/19/2007"
+}
+
+### PUT contact/ change it
+PUT https://personal-assignment-1.herokuapp.com/contacts/626ab75a6d3ffdff8b4cb4a6 
+content-type:application/json
+
+{
+"firstName":"David", "lastName":"Farrier", "email":"davef@email.com", "favoriteColor":"Purple", "birthday":"04/03/2000"
+}
+
+### delete contact
+DELETE https://personal-assignment-1.herokuapp.com/contacts/6272d7119be33a1e18c11136
