@@ -1,10 +1,13 @@
 const express = require('express');
 const mongodb = require('./db/connect');
-const routes = require('./routes/index');
+const routes = require('./routes/contacts');
+const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use('/', routes);
+app
+.use(bodyParser.json())
+.use('/contacts', routes);
 
 // only listen if mongodb connected successfully
 mongodb.initDb((err) => {
