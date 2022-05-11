@@ -1,12 +1,12 @@
 //LOCALHOST
 // get all contacts
-GET http://localhost:3000
+GET http://localhost:808
 
 ### // get contact by id
-GET http://localhost:3000/contacts/626ab75a6d3ffdff8b4cb4a6
+GET http://localhost:8080/contacts/626ab75a6d3ffdff8b4cb4a6
 
 ### create contact
-POST http://localhost:3000/contacts 
+POST http://localhost:8080/contacts 
 content-type:application/json
 
 {
@@ -14,7 +14,7 @@ content-type:application/json
 }
 
 ### PUT contact/ change it
-PUT http://localhost:3000/contacts/626ab75a6d3ffdff8b4cb4a6 
+PUT http://localhost:8080/contacts/626ab75a6d3ffdff8b4cb4a6 
 // HTTP/1.1 
 content-type:application/json
 
@@ -23,7 +23,7 @@ content-type:application/json
 }
 
 ### delete contact
-DELETE http://localhost:3000/contacts/62729f54607b3826fadefe68
+DELETE http://localhost:8080/contacts/62729f54607b3826fadefe68
 
 
 
