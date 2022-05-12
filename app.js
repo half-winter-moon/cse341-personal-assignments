@@ -14,7 +14,7 @@ var options = {
 };
 
 app
-  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options))
+ .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options))
   .use(cors())
   .use(bodyParser.json())
   .use((req, res, next) => {
